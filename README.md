@@ -28,7 +28,7 @@ vue-cli学习地址：https://github.com/vuejs/vue-cli
 
 在执行npm run dev这条命令的时候其实执行的是package.json文件中的 
 
-![image text](https://raw.github.com/cai00/repositpry/master/vue/images/1.png)
+![image text](https://github.com/cai00/vue/blob/dad93c3c6893cbfe080c945ea8c7d7af119533ea/images/1.png)
 
 build文件中的dev-server.js文件的内容~
 
