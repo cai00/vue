@@ -29,7 +29,7 @@ vue-cli学习地址：https://github.com/vuejs/vue-cli
 
 在执行npm run dev这条命令的时候其实执行的是package.json文件中的
 
-![配置文件执行的命令](http://img.blog.csdn.net/20170829103545824?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![配置文件执行的命令](https://github.com/cai00/vue/blob/master/images/1.png)
 
 build文件中的dev-server.js文件的内容~
 
@@ -67,7 +67,7 @@ build文件中的dev-server.js文件的内容~
 
 （2）项目目录基本结构-App.vue
 
-![项目目录基本结构-App.vue](http://img.blog.csdn.net/20170829112836589?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![项目目录基本结构-App.vue](https://github.com/cai00/vue/blob/master/images/7.png)
 
 （3）项目目录基本结构-main.js
 
@@ -93,7 +93,7 @@ webpack --config build/webpack.base.conf.js
 
 ![webpack -help查看](http://img.blog.csdn.net/20170829115718787?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-![执行命令](http://img.blog.csdn.net/20170829115752920?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![执行命令](https://github.com/cai00/vue/blob/master/images/12.png)
 
 查看执行命令后打包生成的文件：
 
@@ -111,7 +111,7 @@ webpack --config build/webpack.base.conf.js
 
 #### 2、新建配置文件dev-server.js及内容： ####
 
-![配置文件dev-server.js](http://img.blog.csdn.net/20170829153157767?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![配置文件dev-server.js](https://github.com/cai00/vue/blob/master/images/16.png)
 
 （webpack-dev-middleware 学习地址：https://github.com/webpack/webpack-dev-middleware）
 
@@ -123,88 +123,88 @@ webpack --config build/webpack.base.conf.js
 node build/dev-server.js
 ```
 
-![执行命令node](http://img.blog.csdn.net/20170829153325774?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![执行命令node](https://github.com/cai00/vue/blob/master/images/17.png)
 
 ![效果图报错](http://img.blog.csdn.net/20170829153753940?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 然后修改一下webpack-base-conf.js配置文件：
 
-![修改配置](http://img.blog.csdn.net/20170829153942526?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改配置](https://github.com/cai00/vue/blob/master/images/19.png)
 
 再次执行命令：
 
-![再次执行命令](http://img.blog.csdn.net/20170829154244523?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![再次执行命令](https://github.com/cai00/vue/blob/master/images/20.png)
 
 刷新效果图：
 
-![刷新效果图](http://img.blog.csdn.net/20170829154328718?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![刷新效果图](https://github.com/cai00/vue/blob/master/images/21.png)
 
 （注意：一般webpack-base-conf.js配置文件中的publicpath属性都不会去修改，所以，我们需要再次新建一个配置文件webpack.dev.conf.js）
 
 配置webpack.dev.conf.js
 
-![配置webpack.dev.conf.js](http://img.blog.csdn.net/20170829155638295?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![配置webpack.dev.conf.js](https://github.com/cai00/vue/blob/master/images/22.png)
 
 修改dev-server.js
 
-![修改dev-server.js](http://img.blog.csdn.net/20170829155752969?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改dev-server.js](https://github.com/cai00/vue/blob/master/images/23.png)
 
 修改配置webpack.base.conf.js
 
-![修改配置webpack.base.conf.js](http://img.blog.csdn.net/20170829155830770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改配置webpack.base.conf.js](https://github.com/cai00/vue/blob/master/images/24.png)
 
 再次执行命令 node build/dev-server.js
 
-![再次执行命令](http://img.blog.csdn.net/20170829155944710?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![再次执行命令](https://github.com/cai00/vue/blob/master/images/25.png)
 
 更改刷新效果图：
 
-![更改刷新效果图](http://img.blog.csdn.net/20170829160018890?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![更改刷新效果图](https://github.com/cai00/vue/blob/master/images/26.png)
 
 ### 五、热加载，自动刷新浏览器 ###
 
 #### 1、安装插件webpack-hot-middleware ####
 
-![安装插件webpack-hot-middleware](http://img.blog.csdn.net/20170829161141363?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![安装插件webpack-hot-middleware](https://github.com/cai00/vue/blob/master/images/27.png)
 
 #### 2、配置webpack.dev.conf.js ####
 
 (wepack-hot-middleware学习网址： https://github.com/glenjamin/webpack-hot-middleware)
 
-![修改webpack.dev.conf.js](http://img.blog.csdn.net/20170829164116316?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改webpack.dev.conf.js](https://github.com/cai00/vue/blob/master/images/28.png)
 
 #### 3、修改dev-server.js ####
 
-![修改dev-server.js](http://img.blog.csdn.net/20170829164211656?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改dev-server.js](https://github.com/cai00/vue/blob/master/images/29.png)
 
 #### 4、执行命令 ####
-![执行命令](http://img.blog.csdn.net/20170829164243553?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![执行命令](https://github.com/cai00/vue/blob/master/images/30.png)
 
 #### 5、实时更新效果 ####
 
-![实时更新效果](http://img.blog.csdn.net/20170829164311831?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![实时更新效果](https://github.com/cai00/vue/blob/master/images/31.png)
 
 ### 六、监听HTML文件变化 ###
 
 #### 1、监听的地方是title ####
 
-![监听的地方是title](http://img.blog.csdn.net/20170829165727340?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![监听的地方是title](https://github.com/cai00/vue/blob/master/images/32.png)
 
 #### 2、修改dev-server.js ####
 
-![修改dev-server.js](http://img.blog.csdn.net/20170829165754100?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改dev-server.js](https://github.com/cai00/vue/blob/master/images/33.png)
 
 #### 3、修改webpack-dev-conf.js ####
 
-![修改webpack-dev-conf.js](http://img.blog.csdn.net/20170829165831949?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![修改webpack-dev-conf.js](https://github.com/cai00/vue/blob/master/images/34.png)
 
 #### 4、新建dev-client.js ####
 
-![新建dev-client.js](http://img.blog.csdn.net/20170829165912793?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![新建dev-client.js](https://github.com/cai00/vue/blob/master/images/35.png)
 
 #### 5、效果 ####
 
-![效果](http://img.blog.csdn.net/20170829165940396?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![效果](https://github.com/cai00/vue/blob/master/images/36.png)
 
 
 以上便是我的一步一步实践过程，当然还有很多知识点需要去深究的学习一下，希望这是一个不错的开始吧！
