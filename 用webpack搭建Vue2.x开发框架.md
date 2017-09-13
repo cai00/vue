@@ -107,7 +107,7 @@ webpack --config build/webpack.base.conf.js
 
 #### 1、安装webpack-dev-middleware 插件和express插件： ####
 
-![实时编译文件安装插件](http://img.blog.csdn.net/20170829150403628?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FpMF8w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![实时编译文件安装插件](https://github.com/cai00/vue/blob/master/images/15.png)
 
 #### 2、新建配置文件dev-server.js及内容： ####
 
