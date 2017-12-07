@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>调查问卷WebApp</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="web-app-content" id="app" v-cloak>
+		<div class="web-app-box" v-if="pageState == 1">
+			<p class="web-app-title">1.请问您的性别是：</p>
+			<label v-for="(item, index) in sexData">
+				<input type="radio" :value="item.name" v-model="sexValue">
+				{{item.name}}
+			</label>
+			<div class="web-app-footer">
+				<web-button type="primary" :disabled="sexValue==''" @click="bandleNext1">下一步</web-button>
+				<web-button type="ghost" html-type="reset" @click="sexValue = ''">重置</web-button>
+			</div>
+		</div>
+
+		<div class="web-app-box" v-if="pageState == 2">
+			<p class="web-app-title">2.请选择您的兴趣爱好：</p>
+			<label v-for="(item, index) in likeData">
+				<input type="checkbox" :value="item.name" v-model="likeValue">
+				{{item.name}}
+			</label>
+			<div class="web-app-footer">
+				<web-button type="primary" :disabled="likeValue.length < 2 || likeValue.length > 3" @click="bandleNext2">下一步</web-button>
+				<web-button type="primary" @click="bandlePre1">上一步</web-button>
+				<web-button type="ghost" :disabled="false" html-type="reset" @click="likeValue = []">重置</web-button>
+			</div>
+		</div>
+
+		<div class="web-app-box" v-if="pageState == 3">
+			<p class="web-app-title">3.请介绍一下自己：</p>
+			<textarea v-model="message" placeholder="不少于100字" cols="80%" rows="10"></textarea>
+
+			<div class="web-app-footer">
+				<web-button type="primary" :disabled="message.substr(0,100).length < 100" @click="bandleSubmit">提交</web-button>
+				<web-button type="primary" @click="bandlePre2">上一步</web-button>
+				<web-button type="ghost" html-type="reset" @click="message = ''">重置</web-button>
+			</div>
+		</div>
+	</div>
+	<script src="../dist/vue.min.js"></script>
+	<script src="button.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
